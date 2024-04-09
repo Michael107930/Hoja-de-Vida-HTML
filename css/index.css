@@ -1,0 +1,106 @@
+body {
+    margin:0; /*Maregenes*/
+    padding:0; /*Espaciado interior de la division*/
+    background-color:#95b2b0; /* Color de fondo */
+}
+.name {
+    width: 100%; /*Ancho*/
+    height: 300px; /*Altura*/
+    background-color:#020887 ;
+    transform: skewY(-5deg); /*Rotacion en el eje Y*/
+
+}
+.name .img{
+    position: absolute; /* Moverlo con mas libertad */
+    top: 18%;
+    right: 5%;
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    transform: skewY(5deg);
+    overflow: hidden;
+}
+.name .img img{
+    width: 180px;
+    height: 320px;
+}
+.name .contenido{
+    width: 50%;    
+    height: 50%; 
+    position: absolute;
+    left: 25%;
+}
+
+.name .contenido .p1 {
+    color: whitesmoke;/*Color de la letra*/
+    font-family: "Tilt Neon", sans-serif; /*Fuente*/
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+    font-variation-settings:
+      "XROT" 0,
+      "YROT" 0;
+    font-size: 65px; /*Tamaño de la letra*/
+    transform: skewY(5deg);
+    margin-bottom:0;
+}
+
+.name .contenido .p2 {
+    color: whitesmoke;
+    font-family: "Tilt Neon", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "XROT" 0,
+      "YROT" 0;
+    font-size: 35px;
+    transform: skewY(5deg);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.info{
+    width: 90%;
+    height: auto; /*Altura automática, segun lo que tenga mide, se adapta a su contenido*/
+    background-color: #020887;
+    margin:5% auto;/*Margen del 5% arriba y abajo y a los lados automatico*/
+    padding:20px;/*Espaciado interno de 20 pixeles*/
+    border-radius:20px; /*Borde redondeado*/
+}
+.info .titulo_seccion{
+    color: whitesmoke;
+    font-family: "Baloo Tamma 2", sans-serif;
+    font-size: xx-large;
+    text-align: center; /*Centra el texto*/
+    font-weight: bolder; /*Negriña*/
+    border-bottom: 2px #fff8f0 dashed; /*Linea divida la seccion, color, estilo punteado o solida*/
+}
+
+.info .titulo_info{
+    color: whitesmoke;
+    font-family: "Baloo Tamma 2", sans-serif;
+    font-weight: bolder;
+    font-size: large;
+    display: inline;
+    margin-right: 20px;
+}
+.info .infoinfo{
+    color: #392f5a;
+    font-family: "Baloo Tamma 2", sans-serif;
+    font-weight: normal;
+    font-size: large;
+    display: inline;
+}
+
+.info .btn-enviar{
+    background: white;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background: blue;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
